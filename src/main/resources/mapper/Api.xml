@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- JAVA와 연결할 Mapper 파일 설정 -->
+<mapper namespace="kopo.poly.persistance.mapper.IApiMapper">
+
+
+    <insert id="insertSidoList" parameterType="SidoDTO">
+        INSERT INTO SIGUNGU_INFO
+        VALUES
+        <foreach item="item" index="index" collection="list" separator=" , ">
+            (#{item.upr_Cd},#{item.org_Cd},#{item.orgdown_Nm})
+        </foreach>
+    </insert>
+
+    <!-- 시구 API 값에 따라 시군구 선택하기-->
+    <select id="getsido" resultType="SidoDTO">
+        SELECT SIDO_CODE, SIDO_NAME
+        FROM SIDO_INFO
+    </select>
+
+    <select id="getsigungu" resultType="SigunguDTO">
+        SELECT UPR_CD, ORG_CD, ORGDOWN_NM
+        FROM SIGUNGU_INFO
+    </select>
+
+
+
+
+
+
+<!--    <select>-->
+<!--        SELECT * FROM SIDO_INFO-->
+<!--        WHERE SIDO_NAME = #{upr_cd}-->
+<!--    </select>-->
+</mapper>
