@@ -114,7 +114,7 @@
 <%--사이드바 끝!!--%>
 
         <div class="page-heading">
-            <h3><%=session.getAttribute("USER_ID")%>님, 안녕하세요;)</h3>
+            <h3><%=session.getAttribute("USER_ID")%>님, 안녕하세요 :)</h3>
         </div>
         <div class="page-content">
             <div class="card">

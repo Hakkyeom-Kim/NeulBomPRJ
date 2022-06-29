@@ -135,6 +135,7 @@ public class BookController {
         if (Usertype == 1) { //관리자면 이름이 관리자명(보호소명)인 예약정보 리스트 가져오기
             bDTO.setCare_nm(Username);
             bList = bookService.getAdminInfo(bDTO);
+            log.info("blist" + bList);
             log.info("bList.size : " + bList.size());
             model.addAttribute("bList", bList);
         } else { //일반 유저면 자신 아이디로 예약정보 리스트를 가져온다.

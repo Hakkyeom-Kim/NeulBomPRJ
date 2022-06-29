@@ -23,7 +23,7 @@
         <div class="col-lg-5 col-12">
             <div id="auth-left">
                 <div class="logo">
-                    <a href="/index"><img src="/bootstrap/dist/assets/images/logo/logo.png" alt="Logo" srcset="" style="width: 60%; height: 60%;"></a>
+                    <a href="/"><img src="/bootstrap/dist/assets/images/logo/logo.png" alt="Logo" srcset="" style="width: 60%; height: 60%;"></a>
                 </div>
                 <h1 class="auth-title">늘봄 로그인</h1>
                 <p class="auth-subtitle mb-5">서비스 이용을 위해 늘봄에 로그인하세요!</p>

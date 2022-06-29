@@ -14,6 +14,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<%--// 원하시는 디자인을 가져와주세용.--%>
 <head>
     <%
         if(session.getAttribute("USER_ID") == null) { //로그인이 안되었을때

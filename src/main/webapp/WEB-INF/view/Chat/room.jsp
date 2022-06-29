@@ -153,11 +153,21 @@
     <link rel="stylesheet" href="/bootstrap/dist//bootstrap/dist/assets/vendors/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="/bootstrap/dist//bootstrap/dist/assets/css/app.css">
     <link rel="stylesheet" href="/bootstrap/dist//bootstrap/dist/assets/css/pages/auth.css">
+
+    <style>
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 9%);
+        }
+
+    </style>
 </head>
 
 <body>
 <div style="position: relative">
-<div class="col-md-6" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, 100%);">
+<div class="col-md-6 container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, 100%);">
     <button type="button" class="btn btn-primary" id="inChat" onclick="onOpen()">접속하기</button>
     <button type="button" class="btn btn-secondary" id="outChat" onclick="onClose()">접속끊기</button>
     <button type="button" class="btn btn-success" onclick="location.href='/index'">이전페이지</button>
