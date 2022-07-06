@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class MailService implements IMailService {
 
     static final String user = "khkcar@naver.com"; // 본인 네이버 아이디
-    static final String password = "임시"; // 본인 네이버 비번은 사용시에만
+    static final String password = "사용안하는 중"; // 본인 네이버 비번은 사용시에만
 
     @Override
     public int doSendMail(MailDTO pDTO) throws Exception {
